@@ -2,11 +2,13 @@ body {
 	font-size: 17px;
 	line-height: 1.52947;
 	font-weight: 400;
-	letter-spacing: -.021em;
-	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    letter-spacing: -.021em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	/* font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
 	background-color: #fff;
-	color: #333;
-	font-style: normal;
+    color: #212529;
+    font-style: normal;
+    
 }
 
 h1+*,
@@ -182,38 +184,12 @@ a:visited {
 	margin-bottom: 2%;
 }
 
-.info-list .info-list-item:after {
-	content: '';
-	border-bottom: none;
-	border-right: 1px solid #666;
-	padding-right: 11px;
-	height: 100%;
-	bottom: 0;
-	right: -15px;
-	left: auto;
-	font-size: 1.2em;
-}
-
 .think-title {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 1.09375;
 	letter-spacing: .011em;
 	margin-bottom: 6%;
-}
-
-.info-list-item {
-	font-weight: 400;
-	letter-spacing: -.021em;
-	padding: 11px 0;
-	color: #666;
-	text-align: left;
-	text-decoration: none;
-	margin-bottom: 50px;
-	margin-top: 50px;
-	z-index: 0;
-	font-size: 0.85em;
-	cursor: pointer;
 }
 
 .think-fast {
@@ -314,6 +290,46 @@ a:visited {
 
 .toggle {
 	margin-top: 3%;
+}
+
+.info-list{
+    padding:0;
+    width:100%;
+    text-align:left;
+    white-space:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    -ms-overflow-style:none
+}
+.info-list .info-list-item{
+    font-size:14px;
+    padding-right:4%;
+    padding-left: 1%;
+    padding-top: 3%;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    border-right :1px solid #d6d6d6;
+    outline:none
+}
+.info-list :nth-child(3) {
+    border-right :none;
+    padding-right: 0;
+
+}
+.info-list-link{
+    font-size:14px;
+    line-height:1;
+    font-weight:200;
+    letter-spacing:-.021em;
+    font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding:8px 0;
+    color:#666;
+    text-align:left;
+    text-decoration:none;
+    margin-bottom:4px;
+    margin-top: 2%;
+    z-index:0;
 }
 
 /* @media only screen and (max-width: 750px) {
